@@ -1,0 +1,111 @@
+.title {
+  font-size: 70px;
+  font-family: "dancing script", cursive;
+}
+
+.todoitemscontainer {
+  background: linear-gradient(to right, #ffefba, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 650px;
+  margin: 0 auto;
+  overflow: auto;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid purple;
+  flex-wrap: wrap; 
+}
+
+.todoitemscontainer > div {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+#todoinput {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  width: 50%; 
+}
+
+.addbutton, .deletebutton {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+.deletebutton:hover{
+  background-color:#aa4b6b;
+  color: white;
+}
+.addbutton:hover{
+  background-color:#aa4b6b;
+  color: white;
+}
+#list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: decimal;
+  font-family: "Poppins", sans-serif;
+}
+
+#list li {
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+body {
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 60px;
+  }
+  .todoitemscontainer {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .addbutton, .deletebutton {
+    padding: 8px;
+    border-radius: 8px;
+  }
+  #todoinput {
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .title {
+    font-size: 50px;
+  }
+  .todoitemscontainer {
+    padding: 5px;
+    border-radius: 15px;
+  }
+  .addbutton, .deletebutton {
+    padding: 4px;
+    border-radius: 6px;
+  }
+  #todoinput {
+    padding: 2px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .todoitemscontainer > div {
+    flex-direction: column; 
+  }
+  #todoinput {
+    width: 100%; 
+  }
+  .addbutton, .deletebutton {
+    width: 100%; 
+  }
+}
